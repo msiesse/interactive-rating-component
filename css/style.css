@@ -34,6 +34,16 @@ form input[type="submit"] {
   color: #fff;
   letter-spacing: 0.2em;
 }
+.border-star {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: #252d37;
+  border-radius: 50%;
+  width: 2em;
+  height: 2em;
+}
 .rating-form {
   display: flex;
   flex-direction: column;

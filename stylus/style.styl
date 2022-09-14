@@ -10,16 +10,19 @@ flex-display(args)
   display flex
   flex-direction args
 
+full-viewport-center()
+  flex-display column
+  min-height 100vh
+  align-items center
+  justify-content center
+
 *
   box-sizing border-box
 
 body
   background-color very-dark-blue
   color white
-  flex-display column
-  min-height 100vh
-  align-items center
-  justify-content center
+  full-viewport-center()
 
 form
   font-family 'Overpass', sans-serif
@@ -39,6 +42,15 @@ form
     border-radius 20px
     color white
     letter-spacing 0.2em
+
+.border-star
+  flex-display row
+  justify-content center
+  align-items center
+  background-color: dark-blue
+  border-radius: 50%
+  width: 2em
+  height: 2em
 
 .rating-form
   flex-display column
