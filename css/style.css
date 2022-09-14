@@ -21,11 +21,13 @@ form h1 {
 form p {
   font-size: 15px;
   margin-bottom: 1.5em;
+  line-height: 1.5em;
   color: #959eac;
 }
 form input {
   font-family: inherit;
   border: none;
+  cursor: pointer;
 }
 form input[type="submit"] {
   background-color: #fb7413;
@@ -34,6 +36,10 @@ form input[type="submit"] {
   color: #fff;
   letter-spacing: 0.2em;
 }
+form input[type="submit"]:hover {
+  background-color: #fff;
+  color: #fb7413;
+}
 .border-star {
   display: flex;
   flex-direction: row;
@@ -41,20 +47,33 @@ form input[type="submit"] {
   align-items: center;
   background-color: #252d37;
   border-radius: 50%;
-  width: 2em;
-  height: 2em;
+  width: 2.75em;
+  height: 2.75em;
+  margin-bottom: 1em;
+}
+@media screen and (max-width: 403px) {
+  .border-star {
+    margin-bottom: 0;
+  }
 }
 .rating-form {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background: linear-gradient(45deg, #121417, #252d37);
-  border-radius: 15px;
-  padding: 1.5em;
+  background: radial-gradient(circle 450px at top, #252d37, #121417);
+  border-radius: 25px;
+  padding: 1.75em;
   margin: 0.5em;
+  max-width: 380px;
 }
-#rating-1 {
-  font-size: 14px;
+@media screen and (max-width: 403px) {
+  .rating-form {
+    border-radius: 15px;
+    padding: 1.5em;
+  }
+}
+.rating-value {
+  font-size: 15px;
   padding-top: 0.25em;
   color: #959eac;
   height: 3em;
@@ -62,48 +81,20 @@ form input[type="submit"] {
   background-color: #252d37;
   border-radius: 50%;
 }
-#rating-2 {
-  font-size: 14px;
-  padding-top: 0.25em;
-  color: #959eac;
-  height: 3em;
-  width: 3em;
-  background-color: #252d37;
-  border-radius: 50%;
+.rating-value:focus {
+  background-color: #959eac;
+  color: #fff;
 }
-#rating-3 {
-  font-size: 14px;
-  padding-top: 0.25em;
-  color: #959eac;
-  height: 3em;
-  width: 3em;
-  background-color: #252d37;
-  border-radius: 50%;
-}
-#rating-4 {
-  font-size: 14px;
-  padding-top: 0.25em;
-  color: #959eac;
-  height: 3em;
-  width: 3em;
-  background-color: #252d37;
-  border-radius: 50%;
-}
-#rating-5 {
-  font-size: 14px;
-  padding-top: 0.25em;
-  color: #959eac;
-  height: 3em;
-  width: 3em;
-  background-color: #252d37;
-  border-radius: 50%;
+.rating-value:hover {
+  background-color: #fb7413;
+  color: #fff;
 }
 .ratings {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding-bottom: 1em;
+  padding-bottom: 1.5em;
 }
 .attribution {
   font-size: 11px;
