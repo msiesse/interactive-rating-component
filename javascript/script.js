@@ -2,9 +2,10 @@ const ratingInputs = document.getElementsByClassName('rating-value')
 const ratingInputsArray = [...ratingInputs];
 let rating = 0
 
-ratingInputsArray.map((ratingInput) => {
-    ratingInput.addEventListener('click', () => {
+ratingInputsArray.forEach((ratingInput) => {
+    ratingInput.addEventListener('click', (e) => {
         rating = ratingInput.value
+        e.target.focus()
     })
 })
 
