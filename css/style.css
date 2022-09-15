@@ -11,17 +11,6 @@ body {
   align-items: center;
   justify-content: center;
 }
-.box {
-  font-family: 'Overpass', sans-serif;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  background: radial-gradient(circle 450px at top, #252d37, #121417);
-  border-radius: 25px;
-  padding: 1.75em;
-  margin: 0.5em;
-  max-width: 380px;
-}
 h1 {
   font-size: 26px;
   margin-bottom: 0;
@@ -48,11 +37,16 @@ input[type="submit"]:hover {
   background-color: #fff;
   color: #fb7413;
 }
-@media screen and (max-width: 403px) {
-  .box {
-    border-radius: 15px;
-    padding: 1.5em;
-  }
+.box {
+  font-family: 'Overpass', sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: radial-gradient(circle 450px at top, #252d37, #121417);
+  border-radius: 25px;
+  padding: 1.75em;
+  margin: 0.5em;
+  max-width: 380px;
 }
 .border-star {
   display: flex;
@@ -64,11 +58,6 @@ input[type="submit"]:hover {
   width: 2.75em;
   height: 2.75em;
   margin-bottom: 1em;
-}
-@media screen and (max-width: 403px) {
-  .border-star {
-    margin-bottom: 0;
-  }
 }
 .rating-value {
   font-size: 15px;
@@ -99,11 +88,6 @@ input[type="submit"]:hover {
   padding: 2.5em;
   max-width: 420px;
 }
-@media screen and (max-width: 403px) {
-  #thank-you-page {
-    padding: 1.5em;
-  }
-}
 .thank-you {
   align-items: center;
   text-align: center;
@@ -112,11 +96,6 @@ input[type="submit"]:hover {
   max-width: 100%;
   height: auto;
   margin-bottom: 2em;
-}
-@media screen and (max-width: 403px) {
-  .thank-you img {
-    margin-top: 1em;
-  }
 }
 .rating-selected-text {
   display: flex;
@@ -133,15 +112,36 @@ input[type="submit"]:hover {
   color: #fb7413;
   padding-top: 0.75em;
 }
-@media screen and (max-width: 403px) {
-  .rating-selected-text {
-    margin-bottom: 0.75em;
-  }
-}
 .attribution {
   font-size: 11px;
   text-align: center;
 }
 .attribution a {
   color: #3e52a3;
+}
+@media screen and (max-width: 403px) {
+  .box {
+    border-radius: 15px;
+    padding: 1.5em;
+  }
+}
+@media screen and (max-width: 403px) {
+  .border-star {
+    margin-bottom: 0;
+  }
+}
+@media screen and (max-width: 403px) {
+  #thank-you-page {
+    padding: 1.5em;
+  }
+}
+@media screen and (max-width: 403px) {
+  .thank-you img {
+    margin-top: 1em;
+  }
+}
+@media screen and (max-width: 403px) {
+  .rating-selected-text {
+    margin-bottom: 0.75em;
+  }
 }
